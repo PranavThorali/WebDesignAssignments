@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Book Club</title>
+    <!-- Favicon -->
+    <link rel="icon" href="icons8-story-book-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Sierra Book Club</h1>
+        <h2>Northeastern University, Boston</h2>
+        <h2>Club President: Pranav Thorali</h2>
+        <h2></h2>
+        <aside>
+            <h2>Club ID: 0028355</h2>
+        </aside>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="about">
+        <h2><figure><img src="image/aboutus.jpg" width="200"></figure></h2>
+        <p>We are a community of book enthusiasts who come together to share and discuss our favorite reads.</p>
+        <p>Based in Northeastern University, Boston</p>
+    </section>
+
+    <section id="books">
+        <h2>Our Favorite Books</h2>
+        <article>
+            <h3>Book of the Month 1</h3>
+            <figure>
+                <img src="image/book-of-the-month.jpg" alt="Book of the Month" width="200">
+                <figcaption>The Book of the Month is:</figcaption>
+            </figure>
+            <figure>
+                <img src="image/narnia.jpg" alt="Chronicles of Narnia: The Silver Chair" width="300">
+                <figcaption>
+                    <a href="https://www.goodreads.com/book/show/65645.The_Silver_Chair" target="_blank">Chronicles of Narnia: The Silver Chair by C.S Lewis </a>
+                </figcaption>
+            </figure>
+            <p>A classic novel in the acclaimed Narnia Series by C.S Lewis which takes us on a journey of Eustace Scrubb in the magical world of Narnia. As fan favourite Prince Caspian makes an emphatic return to the series alongside some devious mysteries.</p>
+            <h3>Book of the month 2</h3>
+            <figure>
+                <img src="image/harrypotter.jpg" alt="Harry Potter and the Chamber of Secrets" width="300">
+                <figcaption>
+                    <a href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets" target="_blank">Harry Potter and the Chamber of Secrets by J.K Rowling</a>
+                </figcaption>
+            </figure>
+            <p>Harry Potter and the Chamber of Secrets follows Harry's journey as he returns to Hogwarts to try and battle the monster hidden behind the Chamber of Secrets. Will he be able to save Hogwarts and his friends from grave danger?</p>
+            <h3>Book of the Month 3</h3>
+            <figure>
+                <img src="image/Goosebumps.jpg" alt="Goosebumps: Night of the Living Dummy" width="300">
+                <figcaption>
+                    <a href="https://www.goodreads.com/book/show/125553.Goosebumps" target="_blank">Goosebumps: Night of the Living Dummy by R.L Stine</a>
+                </figcaption>
+            </figure>
+            <p>R.L Stine returns with another creepy and terrifying supernatural mystery involving perhaps the most dangerous living dummy terrorizing the author's and reader's imaginations. Is it finally the night where the Living Dummy Prevails or is someone waiting on the other end to stop him dead in his tracks?</p>
+        </article>
+        <!-- Table -->
+        <article>
+            <h3>Recommended Reads</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.goodreads.com/book/show/11588.The_Shining" target="_blank">The Shining</a></td>
+                        <td>Stephen King</td>
+                        <td>Horror Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.goodreads.com/book/show/2767052-the-hunger-games" target="_blank">The Hunger Games</a></td>
+                        <td>Suzanne Collins</td>
+                        <td>Science Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.goodreads.com/book/show/29496076-killers-of-the-flower-moon" target="_blank">Killer of the Flower Moon</a></td>
+                        <td>David Grann</td>
+                        <td>True Crime</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <!-- Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="genre">Favorite Genre:</label>
+            <input list="genres" name="genre" id="genre">
+            <datalist id="genres">
+                <option value="Fiction">
+                <option value="Mystery">
+                <option value="Fantasy">
+                <option value="Non-Fiction">
+                <option value="Biography">
+                <option value="Science Fiction">
+                <option value="Horror">
+                <option value="Romance">
+                <option value="Thriller">
+                <option value="Historical Fiction">
+            </datalist>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <aside>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="https://www.goodreads.com" target="_blank">Goodreads</a></li>
+            <li><a href="mailto:bookclubfantastico@example.com">Email Us</a></li>
+            <li><a href="tel:+18473232314">Call Us</a></li>
+        </ul>
+    </aside>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sierra Book Club. All rights reserved.</p>
+        <audio controls>
+            <source src="audio/Come_And_Get_Your_Love1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="320" height="auto">
+            <source src="video/4.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </footer>
+</body>
+</html>
