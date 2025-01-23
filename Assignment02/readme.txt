@@ -3,7 +3,7 @@
 Professional Portfolio Website
 
  Description
-This project is a professional portfolio website created to showcase personal projects, skills, and achievements. The site uses HTML for structure, CSS for styling, and adheres to responsive design principles. It includes interactive components such as navigation, image gallery, testimonials, a contact form, and a table.
+This Assignment is a professional portfolio website created to showcase personal projects, skills, and achievements. The site uses HTML for structure, CSS for styling, and adheres to responsive design principles. It includes interactive components such as navigation, image gallery, testimonials, a contact form, and a table.
 
  HTML Tags Used:
 
