@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="icon" href="image/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pranav Thorali's Professional Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#image-gallery">Image Gallery</a></li>
+                <li><a href="#table">Education History</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate professional currently pursuing my master's degree. Electronics and Communications Graduate currently pursuing my Masters in Software Engineering systems from Northeastern University, Boston, An Enthusiastic and Curious individual looking to dive into the world of Software Engineering which peaked my interest during the Last year of my Bachelor's degree, in fact I've always been fascinated with the world of Coding and Software just as much as I have been with Hardware and Communication Networks.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <h1>Vehicle Management System</h1><br>
+            <img src="image/p12.jpg" alt="Project 1"> 
+            <br><p>
+                A connected vehicle database management system gathers and analyzes real-time data from vehicle sensors, GPS, and communication modules, covering aspects like location, speed, fuel use, and maintenance. It also interacts with insurance companies to provide driving data for risk assessments and with emergency services to relay critical information quickly in case of incidents. The system must ensure data integrity, security, and scalability while being compatible with cloud services and edge devices, enabling advanced analytics, remote diagnostics, and over-the-air updates.
+            </p>
+            <p> Skills used: RDBMS, Database Design, Data Manipulation</p>
+            <br>
+            <h1>Day Care Management System</h1> <br>
+            <img src="image/p122.png" alt="Project 2"> <br>
+            <p>
+                The Day Care Project aims to address the growing need for quality child care services in urban areas. With more parents entering the workforce, there is a heightened demand for reliable, safe, and enriching day care facilities for children. The project seeks to develop a comprehensive system that streamlines the management of day care centers, including enrollment, scheduling, communication with parents, staff management, and child development tracking.
+            </p>
+            <p>Skills used: Java, Object Oriented Programming</p> <br>
+            <h1>Channel Predictable Free Space Optical Communication System using Machine Learning</h1> <br>
+            <img src="image/fso.jpg" alt="Project 3">
+            <p>
+                We have proposed a system that implements a channel predictable free space optical communications system using intensity modulation and direct detection of the signal at a data rate of about 2.5 Gbps and an input power of 10dBm. The Signal is transmitted over a link length of 2 Km. The Attenuation of the channel is varied according to different weather conditions including clear sky, haze, mist, fog and rainfall and the effects are studied. Six Machine Learning algorithms are compared using Root mean square parameter where Linear regression model predicts the received power most approximately amongst all other algorithms used with a RMSE of 0.0315.
+            </p>
+            <p>Skills Used: 5G Communications, Machine Learning, Optical communication</p>
+        </div>
+    </section>
+    <section id="image-gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="image/image1p.jpg" alt="Image 1">
+            <img src="image/image2p.webp" alt="Image 2">
+            <img src="image/image3p.webp" alt="Image 3">
+            <img src="image/image4p.jpg" alt="Image 4">
+            <img src="image/image5p.jpg" alt="Image 5">
+        </div>
+    </section>
+    
+    <section id="table">
+        <!-- Table -->
+         <h2>Education History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Education</th>
+                    <th>Skills Learned</th>
+                    <th>Degree Pursued</th>
+                    <th>Completion Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Northeastern University</td>
+                    <td>Java, Python, CSS, HTML, Web Technologies, GEN AI</td>
+                    <td>MS in SES</td>
+                    <td>Dec 2025*</td>
+                </tr>
+                <tr>
+                    <td>Madras Institute of Technology</td>
+                    <td>Hardware Programming, Electronics, Communication</td>
+                    <td>BE in ECE</td>
+                    <td>Jun 2023</td>
+                </tr>
+                <tr>
+                    <td>Lincoln School, Nepal</td>
+                    <td>Basic operating systems, Computer Science</td>
+                    <td>High School</td>
+                    <td>Apr 2019</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- Form -->
+     <h2>Send me a message. </h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+    <section id="contact">
+        <h2>Here are my Contact details:</h2>
+        <div class="Name">
+            <p>Pranav Thorali Kubernath</p>
+        </div>
+        <div class="phone number">
+            <p>Phone Number: +1(857)-424-4334</p>
+        </div>
+        <div class="NEU ID">
+            <p>NEU ID: 002809355</p>
+        </div>
+        <div class="email ID">
+            <p>Email id: pthorali2023@gmail.com</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <img src="image/profile1pic.jpg" alt="Profile1">
+            <p>"This portfolio showcases exceptional work! Highly recommend." - Mr.David Terrier - Former Mentor</p>
+        </div>
+        <div class="testimonial">
+            <img src="image/profilepic2.jpg" alt="Profile2">
+            <p>"Impressive skills and dedication to detail." - Mr. Samuel C. Lewis - Former Colleague </p>
+        </div>
+        <div class="testimonial">
+            <img src="image/profilepic3.webp" alt="Profile3">
+            <p>"The Ability to adapt to different situations under pressure is commendable." - Mr. Danny Trelawney - CEO at Expense Simulations </p>
+        </div>
+    </section>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/pranav-thorali-568785222/">LinkedIn</a></li>
+            <li><a href="https://github.com/PranavThorali">GitHub</a></li>
+            <li><a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 My Professional Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
