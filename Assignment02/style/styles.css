@@ -202,30 +202,118 @@ form button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media only screen and (max-width: 375px) {   
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     nav {
-        width: 150px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: rgba(0, 128, 66, 0.9);
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
     }
 
     section {
-        margin-left: 170px;
-    }
-
-    .gallery img {
-        width: 45%;
-    }
-}
-
-@media (max-width: 375px) {
-    nav {
-        width: 120px;
-    }
-
-    section {
-        margin-left: 140px;
+        margin: 10px;
+        padding: 15px;
+        max-width: 100%;
     }
 
     .gallery img {
         width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 5px;
     }
 }
+
+/* For screens up to 768px */
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        background: linear-gradient(to bottom, rgb(0,128,66), antiquewhite);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
