@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Name: Pranav Thorali Kubernath</h1>
+        <h1>NUID: 002809355</h1>
+    </header>
+   <table id="important">
+    <thead>
+        <tr>
+            <th>Checkbox</th>
+            <th>Student</th>
+            <th>Advisor</th>
+            <th>Term</th>
+            <th>Type</th>
+            <th>Percentage</th>
+            <th>Award Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" onchange="handleCheckboxChange(this)"></td>
+            <td>Student 1</td>
+            <td>Teacher 1</td>
+            <td>Fall</td>
+            <td>TA</td>
+            <td>100%</td>
+            <td>Approved</td>
+            <td>
+                <button onclick="editStudent(1)">Edit</button>
+                <button onclick="deleteStudent(this, 1)">Delete</button>
+                <button onclick="toggleDetails(this)" style="color: green;">&#9654;</button>
+            </td>
+        </tr>
+        <tr class="student-details" style="display: none;">
+            <td colspan="8">
+                <div>
+                    <strong>Student 1 Details:</strong><br>
+                    Advisor: Teacher 1<br>
+                    Term: Fall<br>
+                    Type: TA<br>
+                    Percentage: 100%<br>
+                    Award Status: Approved<br>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+   </table>
+   <button type="button" onclick="addStudent()">Add New Student</button>
+   <button type="submit" id="submitButton" disabled onclick="handleSubmit()">Submit</button>
+
+   <script src="script.js"></script>
+</body>
+</html>
